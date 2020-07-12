@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>btvn_bai4_buoi4</title>
+</head>
+<style type="text/css">
+	 body{
+        margin: 0;
+    }
+    ul{
+        margin-top: 20px;
+        margin-left: 20px;
+        list-style: none;          
+    }
+    li{
+        width: 150px;
+        text-align: center;
+        border: 1px solid blue;    
+    }
+    .menu > ul > li{   
+        display: inline-block;
+        border: 1px blue;
+        position: relative;
+        border: 1px solid blue;
+        width: 200px;
+        height: 50px;
+        padding-top: 25px;
+    }
+    .menu > ul > li > ul {
+        display: none; 
+        position: absolute;
+        top: 55px;   
+        left: -61px;
+        
+    }
+    .menu > ul > li > ul li{
+        padding: 5px 0;
+        border: 1px solid blue;
+        width: 200px;
+        height: 40px;
+    }
+    .menu ul li:hover ul{
+        display: block;
+    }
+    .menu_cap2{
+        position: absolute;
+        top: 85px;
+    }
+    .menu_cap1 li > ul{
+		display: none;
+		position: absolute;
+    }
+    .menu_cap2 li{
+    	margin-left: 140px; 
+    	display: none; 
+    }
+    .menu_cap1 li:hover .menu_cap2 li{
+    	display: block;
+    }
+    li{
+        background-color: pink;
+    }
+    li:hover{
+        background-color: white;
+    }
+</style>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="item">trang chủ</li>
+            <li>quần áo nam 
+                <ul class="menu_cap1">
+                    <li class="item">áo cộc tay</li>
+                    <li class="item">quần jean</li>
+                    <li>đồng hồ đeo tay 
+                    	<ul class="menu_cap2">
+                    		<li class="item">đồng hồ casio</li>
+                    		<li>đồng hồ rolex</li>
+                    		<li class="item">đồng hồ fake</li>
+                    	</ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">quần áo nữ</li>
+            <li class="item">quần áo trẻ em</li>
+        </ul>
+    </div>
+</body>
+</html>          
