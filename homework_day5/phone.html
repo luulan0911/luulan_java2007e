@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tính cước phí điện thoại</title>
+</head>
+<body>
+    <script>
+        var x = (window.prompt("Nhập vào số phút gọi: "))
+        var count;
+        const y = 1000;
+        if (x < 0) {
+            document.write("Số phút gọi không hợp lệ !!!")
+        } else if (x > 0 && x < 50) {
+            count = x * 600 + y
+            document.write(x, " phút gọi có số tiền là: ", count)
+        } else if (x > 50 && x < 200) {
+            count = x * 400 + y
+            document.write(x, " phút gọi có số tiền là: ", count)
+        }
+        else {
+            count = x * 200 + y
+            document.write(x, " phút gọi có số tiền là: ", count)
+        }
+    </script>
+</body>
+</html>

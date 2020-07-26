@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>học lực</title>
+</head>
+<body>
+    <script>
+        var num0 = (window.prompt("Nhập vào điểm hệ số 1: "));
+        var num1 = (window.prompt("Nhập vào điểm hệ số 2: "));
+        var num2 = (window.prompt("Nhập vào điểm hệ số 3: "));   
+        var gpa = (num0*1 + num1*2 + num2*3)/6;   
+        if(num0 > 10 || num0 < 0 || num1 > 10 || num1 < 0 || num2 > 10 || num2 < 0) {
+            document.write("điểm nhập vào không hợp lệ ")
+        } 
+        else {
+            document.write("điểm hệ số 1 là: ")
+            document.write(num0)
+            document.writeln("<br>");
+            document.write("điểm hệ số 2 là: ")
+            document.write(num1)
+            document.writeln("<br>");
+            document.write("điểm hệ số 3 là: ")
+            document.write(num2)
+            document.writeln("<br>");
+            if (gpa >= 9) {
+                document.write("học sinh đạt hạng A")
+            } else if (gpa >= 7 && gpa <9) {
+                document.write("học sinh đạt hạng B")
+            } else if (gpa >= 5 && gpa <7) {
+                document.write("học sinh đạt hạng C")
+            }else {
+                document.write("học sinh đạt hạng F")
+            }  
+        }
+    </script>
+</body>
+</html>
