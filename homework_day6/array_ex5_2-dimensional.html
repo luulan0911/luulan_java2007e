@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mảng 2 chiều</title>
+</head>
+<body>
+    <script>
+        var soNguyenDuong = []
+        soNguyenDuong[0] = [1, 2, 3, 8, 10, 11, 89, 52]
+        soNguyenDuong[1] = [12, 05, 80, 8, 13, 71, 56, 63]
+        soNguyenDuong[2] = [15, 18, 64, 543, 54, 0, 92, 19]
+        var max = soNguyenDuong[0][0]
+        var min = soNguyenDuong[0][0]
+        document.write("mảng ban đầu: </br>")
+        for (var i = 0; i < soNguyenDuong.length; i++) { 
+            for (var j = 0; j < soNguyenDuong[i].length; j++) {
+                document.write(soNguyenDuong[i][j] + "______" )
+            }
+            document.write("</br>")
+        }
+        for (var m = 0; m < soNguyenDuong.length; m++) {
+            for (var n = 0; n < soNguyenDuong[m].length; n++) {
+                if (soNguyenDuong[m][n] > max) {
+                    max = soNguyenDuong[m][n]
+                }
+                if (soNguyenDuong[m][n] < min) {
+                    min = soNguyenDuong[m][n]
+                }
+            }
+        }
+        document.write("số lớn nhất: " +max+ "</br>")
+        document.write("số nhỏ nhất: " +min+ "</br>")
+    </script>
+</body>
+</html>

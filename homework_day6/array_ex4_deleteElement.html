@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xóa phần tử trong mảng</title>
+</head>
+<body>
+    <script>
+        var soNguyenDuong = [3, 165, 45, 20, 89, 0,165, 18]
+        var n = window.prompt("Nhập phần tử muốn xóa: ")
+        document.write("mảng ban đầu: </br>")
+        for (var j = 0; j < soNguyenDuong.length; j++) {
+            document.write(soNguyenDuong[j] + "</br>")
+        }
+        for (var i = 0; i < soNguyenDuong.length; i++) {
+            if (n == soNguyenDuong[i]) {
+                delete soNguyenDuong[i];
+            }
+        }    
+        document.write("mảng sau khi xóa: " +soNguyenDuong)
+    </script>
+</body>
+</html>
