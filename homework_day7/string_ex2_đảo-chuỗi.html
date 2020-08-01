@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 2: đảo chuỗi</title>
+</head>
+<body>
+    <script>
+        function daoChuoi(input)
+        {
+            var input = window.prompt("nhập chuỗi: ")
+            document.write("chuỗi ban đầu: ", input +"</br>")
+            var output = " "
+            for (var i = input.length - 1; i >=0; i--) {
+                output += input[i]
+            }
+            document.write("chuỗi sau khi đảo: ", output)
+        }
+        daoChuoi()
+    </script>
+</body>
+</html>

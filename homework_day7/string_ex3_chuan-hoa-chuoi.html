@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 3: chuẩn hóa chuỗi</title>
+</head>
+<body>
+	<script>
+		function chuanHoaChuoi(input)
+        {
+            var input = window.prompt("nhập chuỗi: ")
+            document.write("chuỗi ban đầu: ", input)
+
+			var input1 =  input.trim()         // xóa dấu cách ở đầu và cuối mảng
+			document.write("</br>input1: ", input1 + ".")
+
+			var arr = input1.split(" ")      // mảng để lưu phần tử sau khi cắt  
+			document.write("</br></br>mảng sau khi cắt: </br>") 
+			for (var j = 0; j < arr.length; j++) {
+				document.write(arr[j] + "</br>")
+			} 
+
+			var array = []   // mảng để lưu các phần tử sau khi viết hoa chữ cái đầu 
+			document.write("</br>mảng sau khi viết hoa: </br>")
+            for (var i = 0; i < arr.length; i++) {
+                array[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+				// hàm slice: cho phép lấy phần còn lại của chuỗi và xóa chữ cái đầu
+				document.write(array1[i] + "</br>")
+            }
+			
+			var output = array.join("-") 
+			//join: nối các phần tử của mảng bằng chuỗi ký tự xác định
+			document.write("</br>chuỗi sau khi chuẩn hóa: ", output)
+		}
+        chuanHoaChuoi()
+	</script>
+</body>
+</html>

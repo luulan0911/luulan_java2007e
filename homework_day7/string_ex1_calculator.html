@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var input = window.prompt("nhập biểu thức số học: ")
+		var regex = /^(\d)*(\s)?\+?\-?\*?\/*(\s)*(\d)$/
+		if (!regex.test(input)) {
+			document.write("dữ liệu không hợp lệ, giữa các ký tự phải có dấu cách !")
+		} else {
+			document.write("biểu thức bạn vừa nhập là: " +input+ "</br>")
+		}
+
+		var arr = input.split(" ")
+		var res = 0
+		document.write("</br>")
+		for (var i = 0; i < arr.length; i++) {
+			document.write("phần tử thứ " +(i+1)+ " là: " +arr[i] + "</br>")
+		}
+		
+		function calculate(){
+			var x = +arr[0] 
+			var y = +arr[2]
+			if (arr[1] === "+") {
+				res = x + y
+			} else if (arr[1] === "-"){
+				res = x - y
+			} else if(arr[1] === "*") {
+				res = x * y
+			} else if (arr[1] === "/"){
+				res = x / y
+			} else {
+				document.write("sai dữ liệu đầu vào !!!")
+			}
+		}
+		calculate()
+		document.write("kết quả phép tính: " +res)
+
+	</script>
+</body>
+</html>
