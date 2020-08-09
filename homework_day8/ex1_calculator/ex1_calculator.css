@@ -1,0 +1,50 @@
+.container{
+    height: 200px;
+    width: 165px;
+}
+
+#calculate{
+    width: 150px;
+}
+
+#result{
+    display: block;
+    height: 40px;
+    width: 127px;
+    text-align: right;
+}
+
+.numbers{
+    color: black;
+    background-color: blanchedalmond;
+    border: 2px 2px 2px 2px;
+    height: 30px;
+    width: 30px;
+}
+
+.operators{
+    color: black;
+    background-color: aquamarine;
+    border: 2px 2px 2px 2px;
+    height: 30px;
+    width: 30px;
+}
+
+#clearLast{
+    color: black;
+    background-color: darkorange;
+    height: 30px;
+    width: 30px;
+}
+
+#clearAll{
+    color: black;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+}
+
+.numbers:hover, .operators:hover, #clear:hover{
+    cursor: pointer;
+    background-color: khaki;
+}

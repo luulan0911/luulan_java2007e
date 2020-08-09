@@ -1,0 +1,57 @@
+body{
+    background-color: white;
+}
+.container{
+    margin: 30px auto;
+    height: 410px;
+    width: 40%;
+    background-color: #6ABE4E;
+    position: relative;
+    text-align: center;
+}
+
+.content{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 120px;
+    height: 335px;
+    width: 350px;
+    background-color: white;
+    text-align: center;
+}
+
+#username{
+    width: 289px;
+    height: 50px;
+    background-color: #F2F2F2;
+    display: inline-block;
+    border: none;
+    margin: 20px;
+}
+
+#password{
+    width: 289px;
+    height: 50px;
+    background-color: #F2F2F2;
+    display: inline-block;
+    border: none;
+}
+
+.login {
+    background-color: #00B242;
+    color: white;
+    width: 289px;
+    height: 50px;
+    display: inline-block;
+    border: none;
+    margin: 20px;
+}
+.create{
+    display: block;
+}
+
+.login:hover{
+    cursor: pointer;
+    color: black;
+    background-color: cornflowerblue;
+}
