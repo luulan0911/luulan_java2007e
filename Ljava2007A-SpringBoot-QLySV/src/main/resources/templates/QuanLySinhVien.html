@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>quản lý sinh viên</title>
+</head>
+<body>	
+	<h1>QUẢN LÝ SINH VIÊN</h1>
+	<form th:action="@{/addStudent}" th:object="${student}" method="post">
+		<table>
+            <tr>
+                <td>ID</td>
+                <td><input type="text" th:field="*{id}" name="id" id="id"/></td>
+            </tr>
+            <tr>
+                <td>Ho va ten</td>
+                <td><input type="text" th:field="*{name}" name="name" id="name"/></td>
+            </tr>
+            <tr>
+                <td>Tuoi</td>
+                <td><input type="text" th:field="*{age}" name="age" id="age"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Tao moi"/></td>
+            </tr>
+	    </table>
+    </form>
+</body>
+</html>
