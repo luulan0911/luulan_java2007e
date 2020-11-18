@@ -1,0 +1,10 @@
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\bin\Debug\ReaderWriterThread.exe.config
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\bin\Debug\ReaderWriterThread.exe
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\bin\Debug\ReaderWriterThread.pdb
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.csprojAssemblyReference.cache
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.Form1.resources
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.Properties.Resources.resources
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.csproj.GenerateResource.cache
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.csproj.CoreCompileInputs.cache
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.exe
+E:\operating system - lt hdh\demoSort\ReaderWriterThread\obj\Debug\ReaderWriterThread.pdb

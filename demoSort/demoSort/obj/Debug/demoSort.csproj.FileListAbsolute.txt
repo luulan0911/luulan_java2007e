@@ -1,0 +1,7 @@
+E:\operating system - lt hdh\demoSort\demoSort\bin\Debug\demoSort.exe.config
+E:\operating system - lt hdh\demoSort\demoSort\bin\Debug\demoSort.exe
+E:\operating system - lt hdh\demoSort\demoSort\bin\Debug\demoSort.pdb
+E:\operating system - lt hdh\demoSort\demoSort\obj\Debug\demoSort.csproj.CoreCompileInputs.cache
+E:\operating system - lt hdh\demoSort\demoSort\obj\Debug\demoSort.exe
+E:\operating system - lt hdh\demoSort\demoSort\obj\Debug\demoSort.pdb
+E:\operating system - lt hdh\demoSort\demoSort\obj\Debug\demoSort.csprojAssemblyReference.cache
