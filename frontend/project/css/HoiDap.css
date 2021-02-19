@@ -1,0 +1,281 @@
+.ask_left {
+  float: left;
+  overflow: hidden;
+  width: 73.334%;
+  margin: 10px 0;
+}
+
+.col_topic {
+    float: left;
+    overflow: hidden;
+    width: 28.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.col_topic h2, .col_topic h4 {
+    display: block;
+    overflow: hidden;
+    line-height: 1.3em;
+    font-size: 16px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    text-transform: uppercase
+}
+.highlight_topic {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  list-style: none;
+}
+.highlight_topic li label {
+  display: block;
+  overflow: hidden;
+  padding: 8px 0;
+}
+.iconask-android {
+  background-position: 0 0;
+  margin-right: 5px;
+}
+.highlight_topic li h3 {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.highlight_topic li .subtopic {
+  display: block;
+  overflow: visible;
+  position: relative;
+  top: 0;
+  margin-bottom: 15px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+}
+.highlight_topic .subtopic a {
+  border-bottom: 1px solid #d9d9d9;
+  color: #333;
+  padding: 12px 10px;
+  font-size: 12.5px;
+  display: block;
+  overflow: hidden;
+}
+.ask_sp {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.ask_sp a {
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding: 8px 0;
+}
+.ask_sp a span, .ask_sp a label {
+  display: inline-block;
+  vertical-align: top;
+  color: #288ad6;
+  font-size: 12px;
+}
+.search_sp {
+  display: block;
+  height: 40px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  position: relative;
+}
+.search_sp input {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 10px 0;
+  text-indent: 10px;
+  background: #fff;
+  height: 20px;
+  border-radius: 4px;
+}
+.search_sp button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.iconask-search {
+  background-position: -20px -35px;
+  width: 16px;
+  height: 16px;
+}
+.col_content {
+  float: right;
+  overflow: hidden;
+  width: 68.5%;
+}
+.search_ask {
+  display: block;
+  border: 1px solid #eee;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background-color: #fff4df;
+  padding: 10px;
+}
+.asklatest {
+  display: block;
+  overflow: hidden;
+  line-height: 1.3em;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.listask {
+  display: block;
+  overflow: auto;
+}
+.listask li {
+  display: block;
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.listask li a {
+  display: block;
+  overflow: hidden;
+}
+.listask li img {
+  float: left;
+  width: 180px;
+  height: 100px;
+  margin-right: 10px;
+}
+.listask li p {
+  display: block;
+  overflow: hidden;
+  line-height: 20px;
+  color: #333;
+  margin: 5px 0;
+  max-height: 40px;
+}
+.listask li div {
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  color: #999;
+}
+.viewmore {
+  display: block;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: #288ad6;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.ask_right {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+  margin: 10px 0;
+}
+.area_input {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 6px;
+  min-height: 150px;
+  position: relative;
+}
+.area_input .question {
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.area_input .question span {
+  display: block;
+  color: #999;
+  padding: 8px 0;
+  min-height: 100px;
+}
+.area_input #txtContentQS {
+  display: block;
+  overflow: hidden;
+  padding: 5px 5px 80px;
+  box-sizing: border-box;
+}
+.area_input #lberror {
+  color: #f00;
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 12.5px;
+}
+.barsend {
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+  height: 41px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.barsend a {
+  float: left;
+  overflow: hidden;
+  padding: 2px 12px;
+  font-size: 11px;
+  color: #288ad6;
+  border-right: 1px solid #ddd;
+}
+.barsend button {
+  float: right;
+  padding: 0 16px;
+  margin: 6px;
+  background: #288ad6;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 0;
+  height: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+.banner {
+  margin-top: 20px;
+}
+.hotweek {
+  display: block;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.hotweek h4 {
+  display: block;
+  overflow: hidden;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 6px 0 0 0;
+}

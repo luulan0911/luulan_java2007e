@@ -1,0 +1,561 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="	">
+	<meta name="description" content="shop online">
+	<meta name="keyword" content="smart phone, quan jean">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="MobileOptimized" content="100">
+	<title> ĐỒ ÁN FRONTEND </title>
+	<!-- nhung thu vien bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/Validate.css">
+	<link rel="stylesheet" type="text/css" href="css/menu_DaCap.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+		<div class="container">
+		  <a class="navbar-brand" href="#"> MY PHONE </a> 
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<form class="form-inline my-2 my-lg-0 w-100">
+			    <div class="dropdown">
+				  <input class="form-control mx-sm-3 w-100" onclick="myFunction()" class="dropbtn"  type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" >
+					  <div id="myDropdown" class="dropdown-content clearfix" style="width: 272px; left: 16px; border-radius: 5px">
+					    <a type="button" onclick="dieu_huong()"> iphone</a>
+					    <a href="#"> SamSung </a>
+					    <a href="#"> OPPO </a>
+					    <a href="#"> NOKIA </a>
+					    <a href="#"> HUAWEI </a>
+					    <a href="#"> Xiaomi </a>
+					    <a href="#"> BlackBerry </a>
+					     
+					  </div>
+				  </div>
+		    </form>
+		    <ul class="navbar-nav ml-auto w-100" style="float: left; left: 0px;">
+		      	<li class="nav-item active">
+		        	<a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-lg"></i> Giỏ hàng<span class="sr-only">(current)</span></a>
+		      	</li>
+		    <!--  	<li class="nav-item active">
+		        	<a class="nav-link" href="#"><i class="fa fa-envelope-open fa-lg"></i> Tin nhắn</a>
+		      	</li>
+		    -->
+		      	<li class="nav-item active">
+		        	<a class="nav-link" href="#" ><i class="fa fa-bell fa-lg"></i> Thông báo</a>
+		      	</li>
+		      	<li class="nav-item active dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	<i class="fa fa-user-o fa-lg" ></i> Tài Khoản
+		        	</a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Trang cá nhân</a>
+			          <a class="dropdown-item" href="#"> Cài đặt</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal"> Đăng nhập </a>
+			          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#singinModal"> Đăng kí </a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"> Đăng xuất </a>
+			        </div>
+		      	</li>
+		      	<li class="nav-item active">
+		        	<a class="nav-link" href="#" onclick="Tro_Giup()"><i class="fa fa-question-circle fa-lg"></i> Trợ giúp </a>
+		      	</li>
+
+		    </ul>
+		  </div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row my-3">
+			<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+				<div class="col bg-primary py-3 boder border-dark rounded">
+					<h5 class="text-white" align="center"> Chương trình giảm giá 20% tất cả sản phẩm đến hết 30/9 !</h5> 
+				</div>
+				<div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/iphone-11-pro-max-green-200x200.jpg" class="w-50 mt-3 " alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/oppo-reno-10x-zoom-edition-black-200x200.jpg"  class=" w-50 h-80 mt-3"  alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/oppo-r17-pro-14-200x200.jpg" class="w-50 h-80 mt-3"  alt="...">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only"> Trước</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Sau</span>
+				  </a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 my-mt-3">
+				<div class="card">
+					<div class="offer-text"> sale off 20%</div>
+					<div class="text-center">
+				  	<img src="images/samsung-galaxy-s10-white-400x400.jpg"  class="card-img-top w-50 h-80 mt-3" alt="">
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title text-center">Samsung Galaxy S10 </h5>
+				    <p class="card-text text-center">16.990.000₫     <strike> 20.990.00₫ </strike> </p>
+				  </div>
+				</div>
+				<div class="card mt-2">
+					<div class="offer-text"> sale off 20%</div>
+					<div class="text-center">
+				  	<img src="images/samsung-galaxy-a80-gold-400x460.png" class="card-img-top w-50 h-80 mt-3" alt="">
+				  </div>
+				  <div class="card-body">	
+				    <h5 class="card-title text-center">Samsung Galaxy A80</h5>
+				    <p class="card-text text-center">14.990.000₫     <strike> 18.700.00₫ </strike> </p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row my-3">
+			<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+				<ul class="list-group">
+				  <li class="list-group-item bg-danger text-white"> IPHONE <span class="badge badge-pill badge-info float-right">290</li>
+				  <li class="list-group-item bg-danger text-white"> OPPO <span class="badge badge-pill badge-info float-right">80</li>
+				  <li class="list-group-item bg-danger text-white"> XIAOMI <span class="badge badge-pill badge-info float-right"> 50 </li>
+				  <li class="list-group-item bg-danger text-white"> VIVO <span class="badge badge-pill badge-info float-right">30 </li>
+				</ul>
+
+				<ul class="list-group my-3">
+				  <li class="list-group-item active bg-success"> HUAWEI</li>
+				  <li class="list-group-item active bg-success"> realme <span class="badge badge-pill badge-info float-right">50  </span></li>
+				  <li class="list-group-item active bg-success"> VsMART <span class="badge badge-pill badge-info float-right">119  </li>
+				  <li class="list-group-item active bg-success"> NOKIA <span class="badge badge-pill badge-info float-right">100 </li>
+				  <li class="list-group-item active bg-success"> mobell <span class="badge badge-pill badge-info float-right"> 700 </li>
+				</ul>
+
+				<ul class="list-group my-3">
+				  <li class="list-group-item bg-info text-white"> itel </li>
+				  <li class="list-group-item bg-info text-white"> coolpad <span class="badge badge-pill badge-info float-right"> 110 </span></li>
+				  <li class="list-group-item bg-info text-white"> ASUS <span class="badge badge-pill badge-info float-right"> 200  </li>
+				  <li class="list-group-item bg-info text-white"> BlackBerry <span class="badge badge-pill badge-info float-right"> 119 </li>
+				  <li class="list-group-item bg-info text-white"> mobiistar<span class="badge badge-pill badge-info float-right"> 100 </li>
+				</ul>
+
+				
+
+				<ul class="cap1 list-group ">
+                <li class="showMenu list-group-item list-group-item-info"> Tìm kiếm theo giá...
+                     <ul class=" cap2 list-group my-3">
+						  <li class="list-group-item list-group-item-primary">Dưới 2 triệu </li>
+						  <li class="list-group-item list-group-item-secondary"> Từ 2 triệu - 7 triệu  </li>
+						  <li class="list-group-item list-group-item-success"> Từ 7 triệu - 13 triệu </li>
+						  <li class="list-group-item list-group-item-danger"> Trên 13 triệu  </li>
+						</ul>
+		                </li>
+       				 </ul>
+			</div>
+			<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item"><a href="#">Library</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Data</li>
+				  </ol>
+				</nav>
+				<div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
+				  <button type="button" class="btn btn-default border">1258 items</button>
+				  <div class="btn-group" role="group">
+				    <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      Sắp xếp sản phẩm
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+				      <a class="dropdown-item" href="#"> Giá từ cao đến thấp</a>
+				      <div class="dropdown-divider"></div>
+				      <a class="dropdown-item" href="#"> Giá từ thấp đến cao</a>
+				      <div class="dropdown-divider"></div>
+				       <a class="dropdown-item" href="#"> Sản phẩm nổi bật</a>
+				    </div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- list products -->
+				<div class="row my-3">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="card">
+						  <img src="images/iphone-6s-plus-32gb-200x200.jpg" class="card-img-top img-fluid" alt="" >
+						  <div class="card-body">
+						    <h5 class="card-title text-center">iPhone 6s Plus 32G </h5>
+						    <p class="card-text text-center"> Giá: 9.490.000</p>
+						    <p class="card-text text-center"> Mua đồng hồ thời trang, mắt kính giảm ngay 40% (không kèm khuyến mại khác) </p>
+						    <p class="text-center">
+						    	<a href="#" class="btn btn-primary">Buy now</a>
+						    	<a href="#" class="btn btn-success">Add cart</a>
+						    </p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-mt-3">
+						<div class="card">
+						  <img src="images/iphone-xs-gold-200x200.jpg" class="card-img-top img-fluid" alt="" onclick="detailSP()">
+						  <div class="card-body">
+						    <h5 class="card-title text-center">iPhone Xs 64G </h5>
+						    <p class="card-text text-center">Giá: 26.990.000</p>
+						    <p class="card-text text-center">  Mua đồng hồ thời trang, mắt kính giảm ngay 40% (không kèm khuyến mại khác) </p>
+						    <p class="text-center">
+						    	<a href="#" class="btn btn-primary">Buy now</a>
+						    	<a href="#" class="btn btn-success">Add cart</a>
+						    </p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-mt-3">
+						<div class="card">
+						  <img src="images/iphone-11-pro-max-green-200x200.jpg" class="card-img-top img-fluid" alt="">
+						  <div class="card-body">
+						    <h5 class="card-title text-center">iPhone Pro Max 64G </h5>
+						    <p class="card-text text-center"> Giá: 33.990.000</p>
+						    <p class="card-text text-center" style="color: red"> <br><i>Đặt trước đến 17/10<br> Hỗ trợ mua trả góp 0%</i></p>
+						    <p class="text-center">
+						    	<a href="#" class="btn btn-primary">Buy now</a>
+						    	<a href="#" class="btn btn-success">Add cart</a>
+						    </p>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<nav aria-label="Page navigation example">
+				  <ul class="pagination float-right">
+				    <li class="page-item"><a class="page-link" href="#"> Trước </a></li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item"><a class="page-link" href="#"> Sau </a></li>
+				  </ul>
+				</nav>
+				<div class="clearfix"></div>
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item"><a href="#">Library</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Data</li>
+				  </ol>
+				</nav>
+				<div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
+				  <button type="button" class="btn btn-default border">1234 mặt hàng </button>
+				  <div class="btn-group" role="group">
+				    <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      Sắp xếp sản phẩm
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+				      <a class="dropdown-item" href="#"> Giá từ cao đến thấp </a>
+				      <div class="dropdown-divider"></div>
+				      <a class="dropdown-item" href="#"> Giá từ thấp đến cao</a>
+				      <div class="dropdown-divider"></div>
+				       <a class="dropdown-item" href="#"> Sản phẩm nổi bật </a>
+				    </div>
+				  </div>
+				</div>
+				<div class="clearfix"></div>
+				<!-- list products -->
+				<div class="row my-3">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<div class="card">
+						  <img src="images/oppo-f9-tim-200x200.jpg" class="card-img-top" alt="">
+						  <div class="card-body">
+						    <h5 class="card-title text-center"> OPPO F9</h5>
+						    <p class="card-text text-center"> Giá: 5.490.000đ </p>
+						    <p class="card-text text-center"> Mua đồng hồ thời trang, mắt kính giảm ngay 40% (không kèm khuyến mại khác) </p>
+						    <p class="text-center">
+						    	<a href="#" class="btn btn-primary">Buy now</a>
+						    	<a href="#" class="btn btn-success">Add to cart</a>
+						    </p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-mt-3">
+						<div class="card">
+						  <img src="images/oppo-r17-pro-14-200x200.jpg" class="card-img-top" alt="">
+						  <div class="card-body">
+						    <h5 class="card-title text-center"> OPPO R17 Pro</h5>
+						    <p class="card-text text-center">Giá: 10.990.000đ </p>
+						    <p class="card-text text-center"> Mua đồng hồ thời trang, mắt kính giảm ngay 40% (không kèm khuyến mại khác) </p>
+						    <p class="text-center">
+						    	<a href="#" class="btn btn-primary">Buy now</a>
+						    	<a href="#" class="btn btn-success">Add to cart</a>
+						    </p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 my-mt-3">
+						<div class="card">
+						  <img src="images/oppo-reno-10x-zoom-edition-black-200x200.jpg" class="card-img-top" alt="">
+						  <div class="card-body">
+						    <h5 class="card-title text-center">OPPO Reno 10x Zoom Edition </h5>
+						    <p class="card-text text-center">Giá 17.990.000</p>
+						    <p class="card-text text-center">Tặng thêm 1 năm bảo hành chính hãng và 2 khuyến mại </p>
+						    <p class="text-center">
+						    	<a href="#" class="btn btn-primary">Buy now</a>
+						    	<a href="#" class="btn btn-success">Add to cart</a>
+						    </p>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<nav aria-label="Page navigation example">
+				  <ul class="pagination float-right">
+				    <li class="page-item"><a class="page-link" href="#"> Trước </a></li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item"><a class="page-link" href="#"> Sau </a></li>
+				  </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid my-3">
+		<div class="row text-center bg-primary py-4">
+			<div class="col col-sm-12 col-md-12 col-xl-12 col-lg-12">
+				<i class="fa fa-download text-white fa-2x"></i>
+				<span class="h4 text-white"> Tải xuống ứng dụng của chúng tôi và nhận thêm mã giảm giá đối với tất cả các sản phẩm </span>
+				<a href="#" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container my-3">
+		<div class="row">
+			<div class="col col-sm-12 col-md-12 col-xl-12 col-lg-12">
+				<div class="small-box">
+				    <strong>Laptops :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
+				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+				    <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
+				    <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
+				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+				    <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
+				</div>
+				<div class="small-box">
+				    <strong>Mobiles :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
+				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+				    <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
+				    <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
+				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+				    <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
+				</div>
+				<div class="small-box">
+				    <strong>Computers :</strong> <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx Laptops</a> |
+				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+				    <a href="#">Sony Laptops</a> | <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> |
+				    <a href="#">Microx</a> |<a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |
+				    <a href="#">samsung</a> | <a href="#">Sony</a> | <a href="#">Microx</a> |<a href="#">samsung</a> |
+				    <a href="#">Sony</a> | <a href="#">Microx</a> | view all items
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container my-3">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
+				<h6> Phản hồi</h6>
+				<hr>
+				<form class="border py-3 px-3">
+					<div class="form-row align-items-center".>
+				    <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+				      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder=" Họ tên ...">
+				    </div>
+				    <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+				      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder=" Email...">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				   	<textarea name="message" class="form-control" placeholder=" Nhập phản hồi "></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-primary btn-block">Gửi</button>
+				</form> 
+			</div>
+			<div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
+				<h6> Địa chỉ của chúng tôi</h6>
+				<hr>
+				<p>
+					Trung Tâm Tin Học ĐH Khoa học Tự Nhiên
+					<br><br>
+					128A, Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội
+					<br>
+					
+				</p>
+			</div>
+			<div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 mt-3">
+				<h6>Our social</h6>
+				<hr>
+				<i class="fa fa-facebook-square fa-3x"></i>
+				<i class="fa fa-linkedin-square fa-3x"></i>
+				<i class="fa fa-twitter-square fa-3x"></i>
+				<i class="fa fa-youtube-square fa-3x"></i>
+				<p class="mt-2">
+					Trải nghiệm mua hàng tốt nhất !
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid bg-primary py-3">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<p class="text-center text-white pt-3">©2020 |   All Rights Reserved |   www.MyPhone.com  |   Email us:MyPhoneT3H@gmail.com</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal login -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="login_form1" method="post" name="form1" onsubmit="return Validated()">
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" name="email1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" name="password1" class="form-control" id="pass1" placeholder="Password">
+					    <div id="pass_error1"> Sai mật khẩu </div>
+					  </div>
+					  <div class="form-group form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+					  </div>
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="submit" class="btn btn-primary">Login</button>
+					</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal sign in -->
+	<div class="modal fade" id="singinModal" tabindex="-1" role="dialog" aria-labelledby="singinModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form class="login_form" method="post" name="form" onsubmit="return validated()">
+	        			<div class="form-group">
+					      <label for="inputUser">User name</label>
+					      <input type="text" class="form-control" name="user" placeholder="User name">
+					      <div id="user_error"> User error </div>
+					    </div>
+	        			<div class="form-group">
+					       <label for="exampleInputEmail1">Email address</label>
+					      <input autocomplete="off" type="" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+					      <div id="email_error"> Email không hợp lệ! </div>
+					    </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputPassword4"> Password</label>
+					      <input type="password" name="password" class="form-control" id="pass" placeholder="Password">
+					      <div id="pass_error">Mật khẩu ít nhất 6 kí tự </div>
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputConfirmPass">Confirm Password</label>
+					      <input type="password" class="form-control" name="confirmPass"  placeholder="Confirm Password">
+					      <div id="confirm_error"> Mật khẩu không khớp </div>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Address</label>
+					    <input type="text" class="form-control" name="addr1"   placeholder="1234 Main St">
+					    <div id="addr1_error"> Địa chỉ không hợp lệ! </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress2">Address 2</label>
+					    <input type="text" class="form-control" name="addr2"  placeholder="Apartment, studio, or school">
+					    <div id="addr2_error"> Địa chỉ không hợp lệ! </div>
+
+					  </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputPhone">Phone</label>
+					      <input type="text" class="form-control" name="phone" id="phone">
+					      <div id="phone_error"> Số điện thoại không hợp lệ! </div>
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputState">Country</label>
+					      <select id="inputState" class="form-control">
+					        <option selected>Choose...</option>
+					        <option>...</option>
+					      </select>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="form-check">
+					      <input class="form-check-input" type="checkbox" id="gridCheck">
+					      <label class="form-check-label" for="gridCheck">
+					        Check me out
+					      </label>
+					    </div>
+					  </div>
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="submit" class="btn btn-primary" onclick="dangKi()">Sign in</button>
+					</form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal logout -->
+	<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Logout</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <h4>Are you sure ??? </h4>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+	        <button type="button" class="btn btn-primary" onclick="dangXuat()">Yes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- nhung cac thu vien js cua bootstrap -->
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript" src="js/Validate.js"></script>
+</body>
+</html>

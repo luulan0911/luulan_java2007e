@@ -1,0 +1,55 @@
+.offer-text{
+    position: absolute;
+    background-color: red;
+    padding: 8px 5px;
+    margin: 5px 0px;
+    border-radius: 0px 3px 3px 0px;
+    color: white;
+}
+.small-box{
+    font-size: 10px;
+    margin: 3px 0px;
+}
+.small-box a {
+    color:  #808080;
+    padding: 0px 2px;
+}
+@media (max-width: 767px) {
+.my-mt-3 {
+    margin-top:20px;
+}
+}
+img {
+     image-rendering: pixelated;
+}
+.carousel-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+  
+}
+a:hover{
+    background-color:  #a8a8a8;
+
+    border-radius: 5px;
+}
+
+/* menu da cap */
+    .cap1 li {
+        display: block;  
+    }
+    .cap1 li:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+    .cap2 {
+        display: none;
+        list-style: none;
+    }
+    .showMenu {
+        position: relative;
+    }
+    .showMenu:hover .cap2{
+        display: block;
+    }
